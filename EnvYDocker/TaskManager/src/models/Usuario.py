@@ -2,11 +2,12 @@
 from dataclasses import dataclass 
 from src.utils  import verificar_nombre, verificar_iD, verificar_correo, genAleatorio
 
+@dataclass
 class Usuario: 
 
  __nombre : str
- __iD : int
  __correo : str
+ __iD  = genAleatorio()
 
  def __post_init__(self):
     if verificar_nombre(self.__nombre) == False: 
@@ -17,8 +18,6 @@ class Usuario:
            raise TypeError("El correo no tiene el formato correcto ")
     return True
  
-          
-    
 
  @property
  def nombre(self) -> str: 
@@ -26,7 +25,7 @@ class Usuario:
 
  @property
  def iD(self) -> int: 
-     return self.iD
+     return self.__iD
 
  @property
  def correo(self) -> str: 
@@ -42,14 +41,14 @@ class Usuario:
  @iD.setter
  def iD(self, nuevoiD):
     if verificar_iD(nuevoiD) == True: 
-       self.__nombre = nuevoiD
+       self.__iD = nuevoiD
     else: 
        raise TypeError("El nuevo iD o es de longitud diferente o tipo incorrecto. ")
 
  @iD.correo
- def correo(self, nuevocorreo):
-    if verificar_correo(nuevocorreo) == True: 
-       self.__nombre = nuevocorreo
+ def correo(self, nuevoCorreo):
+    if verificar_correo(nuevoCorreo) == True: 
+       self.__correo = nuevoCorreo
     else: 
        raise TypeError("El correo no tiene el formato correcto ")
 
