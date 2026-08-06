@@ -1,8 +1,8 @@
 
 from dataclasses import dataclass
 from datetime import datetime
-from src.utils import verificar_fecha, verificar_nombre, verificar_estatus, verificar_usuario
-from src.models import Usuario
+from src.utils.validatorsYutils import verificar_fecha, verificar_nombre, verificar_estatus, verificar_usuario
+from src.models.Usuario import Usuario
 from typing import Optional
 
 @dataclass
@@ -32,28 +32,16 @@ class Tarea:
   def nombre(self) -> str: 
      return self.__nombre
 
-  @property
-  def estatus(self) -> bool: 
-     return self.__estatus 
-
-  @property 
-  def fechaCreacion(self) -> datetime: 
-     return self.__fechaCreacion
-
-  @property
-  def fechaLimite(self) -> datetime:
-     return self.__fechaLimite
-
-  @property
-  def perteneceAUsuario(self) -> Usuario:
-       return self.__perteneceAUsuario
-
   @nombre.getter
   def __perteneceAUsuario(self, nuevoNombre): 
      if verificar_nombre(nuevoNombre) == True:
         self.__nombre = nuevoNombre
      else: 
         raise TypeError("El tipo de dato no es correcto para el nombre de la Tarea."); 
+
+  @property
+  def estatus(self) -> bool: 
+     return self.__estatus 
 
   @estatus.getter
   def estatus(self, nuevoEstatus): 
@@ -62,6 +50,10 @@ class Tarea:
        else: 
           raise TypeError("El tipo de dato no es correcto para el estatus de la Tarea."); 
 
+  @property 
+  def fechaCreacion(self) -> datetime: 
+     return self.__fechaCreacion
+
   @fechaCreacion.getter
   def fechaCreacion(self, nuevaFechaCreacion): 
        if verificar_fecha(nuevaFechaCreacion) == True:
@@ -69,16 +61,34 @@ class Tarea:
        else: 
           raise TypeError("El tipo de dato no coincide con el tipo de fecha o esta fuera de los limites."); 
 
+  @property
+  def fechaLimite(self) -> datetime:
+     return self.__fechaLimite
+
   @fechaLimite.getter
   def fechaLimite(self, nuevaFechaLimite): 
-       if verificar_fecha(nuevaFechaLimite) == True:
-          self.fechaLimite = nuevaFechaLimite
-       else: 
-          raise TypeError("El tipo de dato no coincide con el tipo de fecha o esta fuera de los limites."); 
+         if verificar_fecha(nuevaFechaLimite) == True:
+            self.fechaLimite = nuevaFechaLimite
+         else: 
+            raise TypeError("El tipo de dato no coincide con el tipo de fecha o esta fuera de los limites."); 
+
+  @property
+  def perteneceAUsuario(self) -> Usuario:
+       return self.__perteneceAUsuario
 
   @estatus.getter
   def estatus(self, nuevoEstatus): 
-       if verificar_usuario(nuevoEstatus) == True:
-            self.__estatus = nuevoEstatus
-       else: 
-            raise TypeError("El tipo de dato no es booleano"); 
+         if verificar_usuario(nuevoEstatus) == True:
+              self.__estatus = nuevoEstatus
+         else: 
+              raise TypeError("El tipo de dato no es booleano"); 
+
+
+
+
+
+
+
+ 
+
+ 

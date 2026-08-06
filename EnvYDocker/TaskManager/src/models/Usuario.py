@@ -1,6 +1,6 @@
 
 from dataclasses import dataclass 
-from src.utils  import verificar_nombre, verificar_iD, verificar_correo, genAleatorio
+from src.utils.validatorsYutils  import verificar_nombre, verificar_iD, verificar_correo, genAleatorio
 
 @dataclass
 class Usuario: 
@@ -23,33 +23,35 @@ class Usuario:
  def nombre(self) -> str: 
     return self.__nombre
 
- @property
- def iD(self) -> int: 
-     return self.__iD
-
- @property
- def correo(self) -> str: 
-     return self.__correo
-
  @nombre.setter
- def nombre(self, nuevoNombre):
+ def nombre(self, nuevoNombre) -> None:
     if verificar_nombre(nuevoNombre) == True: 
        self.__nombre = nuevoNombre
     else: 
        raise TypeError("El nombre no es del tipo correcto. ")
 
+ @property
+ def iD(self) -> int: 
+     return self.__iD
+
  @iD.setter
- def iD(self, nuevoiD):
+ def iD(self, nuevoiD) -> None:
     if verificar_iD(nuevoiD) == True: 
        self.__iD = nuevoiD
     else: 
        raise TypeError("El nuevo iD o es de longitud diferente o tipo incorrecto. ")
 
- @iD.correo
- def correo(self, nuevoCorreo):
+ @property
+ def correo(self) -> str: 
+     return self.__correo
+
+ @correo.setter
+ def correo(self, nuevoCorreo) -> None:
     if verificar_correo(nuevoCorreo) == True: 
        self.__correo = nuevoCorreo
     else: 
        raise TypeError("El correo no tiene el formato correcto ")
 
-    
+
+
+

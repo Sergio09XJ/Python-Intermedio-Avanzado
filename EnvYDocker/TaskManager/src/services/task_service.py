@@ -1,8 +1,8 @@
-
+"""
 from dataclasses import dataclass, field 
 from datetime import datetime
 from src.models import Tarea, Usuario
-from src.utils import  verficar_existencia_usuario, verificar_fecha, creador_fecha
+from src.utils.validatorsYutils import  verficar_existencia_usuario, verificar_fecha, creador_fecha
 
 @dataclass
 class Task_Service: 
@@ -106,22 +106,4 @@ class Task_Service:
 
   def tareaCompletada(self,Tarea):
      Tarea.estatus(True)
-     
-     
-
-
-
-  
-
-  
-
-
-
-
-
-
-  
- 
-
-  
-
+"""

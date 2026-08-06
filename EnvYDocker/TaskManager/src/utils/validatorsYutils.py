@@ -1,7 +1,8 @@
 import re
 import random
 from datetime import datetime
-from src.models import Usuario
+from src.models.Usuario import Usuario
+
 
 def verificar_iD(iD) -> bool:
   if not isinstance(iD, int) or ( iD < 100000 or iD > 999999): 
@@ -16,7 +17,7 @@ def verificar_nombre(nombre) -> bool:
 def verificar_correo(correo) -> bool:
   if isinstance(correo, str):
     patronCorreo = r"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
-    return re.fullmatch(patronCorreo, correo)
+    return re.fullmatch(patronCorreo, correo) is not None
   return False
    
 
@@ -48,5 +49,6 @@ def genAleatorio() -> int:
 
 def creador_fecha() -> datetime:
   inputF = input("Ahora dame la fecha Limite - ejemplo: 26/09/12/13/30 | Los ultimos 2 dijitos corresponden a la hora(formato de 24 hrs) y minuto ")
-  inputF = inputF.split("/")
-  return datetime(inputF[0], inputF[1], inputF[2], inputF[3], inputF[4])
+  listaInput = inputF.split("/")
+  return datetime(int(listaInput[0]), int(listaInput[1]), int(listaInput[2]), int(listaInput[3]), int(listaInput[4]))
+  
