@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from src.utils.validatorsYutils import verificar_fecha, verificar_nombre, verificar_estatus, verificar_usuario
 from src.models.Usuario import Usuario
-from typing import Optional
+
 
 @dataclass
 class Tarea: 
@@ -11,7 +11,7 @@ class Tarea:
   __nombre : str
   __fechaLimite : datetime
   __perteneceAUsuario : Usuario
-  __estatus : Optional[bool] = None 
+  __estatus = False
   __fechaCreacion = datetime.now().replace(second=0, microsecond=0)
 
   def __post_init__(self):
@@ -32,8 +32,8 @@ class Tarea:
   def nombre(self) -> str: 
      return self.__nombre
 
-  @nombre.getter
-  def __perteneceAUsuario(self, nuevoNombre): 
+  @nombre.setter
+  def nombre(self, nuevoNombre : str) -> None: 
      if verificar_nombre(nuevoNombre) == True:
         self.__nombre = nuevoNombre
      else: 
@@ -43,8 +43,8 @@ class Tarea:
   def estatus(self) -> bool: 
      return self.__estatus 
 
-  @estatus.getter
-  def estatus(self, nuevoEstatus): 
+  @estatus.setter
+  def estatus(self, nuevoEstatus : bool) -> None: 
        if verificar_estatus(nuevoEstatus) == True:
           self.__estatus = nuevoEstatus
        else: 
@@ -54,8 +54,8 @@ class Tarea:
   def fechaCreacion(self) -> datetime: 
      return self.__fechaCreacion
 
-  @fechaCreacion.getter
-  def fechaCreacion(self, nuevaFechaCreacion): 
+  @fechaCreacion.setter
+  def fechaCreacion(self, nuevaFechaCreacion : datetime) -> None: 
        if verificar_fecha(nuevaFechaCreacion) == True:
           self.fechaCreacion = nuevaFechaCreacion
        else: 
@@ -65,8 +65,8 @@ class Tarea:
   def fechaLimite(self) -> datetime:
      return self.__fechaLimite
 
-  @fechaLimite.getter
-  def fechaLimite(self, nuevaFechaLimite): 
+  @fechaLimite.setter
+  def fechaLimite(self, nuevaFechaLimite : datetime) -> None: 
          if verificar_fecha(nuevaFechaLimite) == True:
             self.fechaLimite = nuevaFechaLimite
          else: 
@@ -76,10 +76,10 @@ class Tarea:
   def perteneceAUsuario(self) -> Usuario:
        return self.__perteneceAUsuario
 
-  @estatus.getter
-  def estatus(self, nuevoEstatus): 
-         if verificar_usuario(nuevoEstatus) == True:
-              self.__estatus = nuevoEstatus
+  @perteneceAUsuario.setter
+  def perteneceAUsuario(self, UsuarioNuevo : Usuario) -> None: 
+         if verificar_usuario(UsuarioNuevo) == True:
+              self.__perteneceAUsuario = UsuarioNuevo
          else: 
               raise TypeError("El tipo de dato no es booleano"); 
 

@@ -24,7 +24,7 @@ class Usuario:
     return self.__nombre
 
  @nombre.setter
- def nombre(self, nuevoNombre) -> None:
+ def nombre(self, nuevoNombre : str) -> None:
     if verificar_nombre(nuevoNombre) == True: 
        self.__nombre = nuevoNombre
     else: 
@@ -35,7 +35,7 @@ class Usuario:
      return self.__iD
 
  @iD.setter
- def iD(self, nuevoiD) -> None:
+ def iD(self, nuevoiD : int) -> None:
     if verificar_iD(nuevoiD) == True: 
        self.__iD = nuevoiD
     else: 
@@ -46,7 +46,7 @@ class Usuario:
      return self.__correo
 
  @correo.setter
- def correo(self, nuevoCorreo) -> None:
+ def correo(self, nuevoCorreo : str) -> None:
     if verificar_correo(nuevoCorreo) == True: 
        self.__correo = nuevoCorreo
     else: 
