@@ -31,31 +31,37 @@ def main():
                administradorTareas.crearUsuario()
            case "2":
                print("Eleccion 2")
-               administradorTareas.crearTarea()
+               try:
+                usuarioBuscar = input("Dame el nombre del usuario a buscar ")
+                administradorTareas.buscarUsuario(usuarioBuscar)
+               except ValueError as e:
+                  print(f"{e}")
            case "3": 
                print("Eleccion 3")
-               administradorTareas.eliminarTarea()
+               try:
+                usuarioBuscar = input("Dame el nombre del usuario a eliminar ")
+                administradorTareas.eliminarUsuario(usuarioBuscar)
+               except ValueError as e:
+                   print(f"{e}")
            case "4": 
                print("Eleccion 4")
                try:
                  TareaACompletar = input("Dame el nombre tarea que deseas buscar: ")
                  administradorTareas.tareaCompletada(administradorTareas.buscarTarea(TareaACompletar))
                except ValueError as e:
-                   print(f"{e}")        
+                   print(f"{e}")  
            case "5": 
-               print("Eleccion 5")
-               try: 
-                TareaACompletar = input("Dame el nombre tarea que deseas buscar: ")
-                administradorTareas.buscarTarea(TareaACompletar).mostrarTarea()
-               except ValueError as e:
-                 print(f"{e}")    
+                try: 
+                  administradorTareas.crearTarea()  
+                except ValueError as e:
+                 print(f"{e}")  
            case "6":
-               print("Eleccion 6")
-               try: 
-                TareaABuscar = input("\n Dame el nombre de la tarea que deseas buscar: ")
-                administradorTareas.buscarTarea(TareaABuscar).mostrarTarea()
-               except ValueError as e: 
-                print(f"{e}")
+                print("Eleccion 6")
+                try: 
+                   TareaABuscar = input("\n Dame el nombre de la tarea que deseas buscar: ")
+                   administradorTareas.buscarTarea(TareaABuscar).mostrarTarea()
+                except ValueError as e: 
+                   print(f"{e}")
            case "7": 
                print("Eleccion 7")
                try: 
@@ -78,9 +84,9 @@ def main():
            case "9": 
                print("Eleccion 9")
                try: 
-                 UsuarioAEliminarTareas = input("\n Dame el nombre del usuario para eliminar sus tareas: ")
-                 Tareas = administradorTareas.obtenerTareasUsuario(UsuarioAEliminarTareas)
-                 print("\nLa lista de tareas eliminadas es: ")
+                 UsuarioAobtenerTareas = input("\n Dame el nombre del usuario para obtener sus tareas: ")
+                 Tareas = administradorTareas.obtenerTareasUsuario(UsuarioAobtenerTareas)
+                 print("\nLa lista de tareas es: ")
                  for Tarea in Tareas: 
                      print("\n")
                      Tarea.mostrarTarea()
@@ -89,12 +95,9 @@ def main():
            case "10": 
                print("Eleccion 10")
                try: 
-                UsuarioAEliminarTareas = input("\n Dame el nombre del usuario para eliminar sus tareas: ")
-                Tareas = administradorTareas.obtenerTareasUsuario(UsuarioAEliminarTareas)
-                print("\nLa lista de tareas eliminadas es: ")
-                 for Tarea in Tareas: 
-                  print("\n")
-                 Tarea.mostrarTarea()
+                 TareaABuscar = input("\n Dame el nombre de la tarea que deseas modificar: ")
+                 eleccion = input("\n Dime que deseas modificar \n 1 nombre \n 2 Fecha Creación \n 3 Fecha Limite \n 4 El usuario al que pertenece \n 5 Estatus ")
+                 administradorTareas.modificarTarea(administradorTareas.buscarTarea(TareaABuscar), eleccion)
                except ValueError as e: 
                 print(f"{e}")
            case "11": 

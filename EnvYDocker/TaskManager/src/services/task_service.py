@@ -128,32 +128,34 @@ class Task_Service:
       return listaTareasUsuario
   
 
-  def modificarTarea(self, Tarea : Tarea, elector : int) -> None:
+  def modificarTarea(self, Tarea : Tarea, elector : str) -> None:
      
-     if not isinstance(elector, int):
+     if not isinstance(elector, str):
         logger.warning("El valor del atributo no coincide con ninguno de la Tarea")
         raise 
 
      match elector: 
-        case 1: 
+        case "1": 
            Tarea.nombre = input("Dame el nombre nuevo de tu tarea")
            logger.info("Se modifico el nombre de tu Tarea.")
-        case 2: 
+        case "2": 
            Tarea.fechaCreacion = creador_fecha() 
            logger.info("Se modifico la fecha de creación de tu Tarea.")
-        case 3: 
+        case "3": 
            Tarea.fechaLimite = creador_fecha()
            logger.info("Se modifico la fehca limite de tu tarea.")
-        case 4: 
+        case "4": 
            Usuario = input("Dame el nombre del usuario al que deseas agregarle La tarea Nueva: ")
            Tarea.perteneceAUsuario = self.buscarUsuario(Usuario)
            logger.info("Se modifico el dueño de la tarea.")
-        case 5:
+        case "5":
            if Tarea.estatus: 
              Tarea.estatus = False
              logger.info("Se marco como incompleta la tarea.")
            else: 
               self.tareaCompletada(Tarea)
+        case _ :
+           print("Tu elección no esta dentro de los parametros. ")
      
 
   def tareaCompletada(self,Tarea : Tarea) -> None:

@@ -1,5 +1,5 @@
 
-from dataclasses import dataclass 
+from dataclasses import dataclass, field
 from src.utils.validatorsYutils  import verificar_nombre, verificar_iD, verificar_correo, genAleatorio
 
 @dataclass
@@ -7,7 +7,7 @@ class Usuario:
 
  __nombre : str
  __correo : str
- __iD  = genAleatorio()
+ __iD : int = field(default_factory = genAleatorio, init=False)
 
  def __post_init__(self):
     if verificar_nombre(self.__nombre) == False: 
@@ -33,13 +33,6 @@ class Usuario:
  @property
  def iD(self) -> int: 
      return self.__iD
-
- @iD.setter
- def iD(self, nuevoiD : int) -> None:
-    if verificar_iD(nuevoiD) == True: 
-       self.__iD = nuevoiD
-    else: 
-       raise TypeError("El nuevo iD o es de longitud diferente o tipo incorrecto. ")
 
  @property
  def correo(self) -> str: 

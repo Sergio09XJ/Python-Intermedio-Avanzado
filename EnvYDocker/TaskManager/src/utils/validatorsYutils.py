@@ -34,7 +34,7 @@ def verificar_estatus(estatus : bool) -> bool:
 
 
 def genAleatorio() -> int:
-  return random.randint(10000, 999999)
+  return random.randint(100000, 999999)
 
 def creador_fecha() -> datetime:
   inputF = input("Ahora dame la fecha Limite - ejemplo: 26/09/12/13/30 | Los ultimos 2 dijitos corresponden a la hora(formato de 24 hrs) y minuto ")

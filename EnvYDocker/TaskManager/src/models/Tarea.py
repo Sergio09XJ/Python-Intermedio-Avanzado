@@ -86,7 +86,7 @@ class Tarea:
 
   def mostrarTarea(self) -> str:
       completada = "si" if self.__estatus else "no"
-      return f"\nEl nombre de tu tarea es: {self.__nombre} \n La fecha Limite es: {self.__fechaLimite} \n La fecha de creación es: {self.__fechaCreacion} \n La Tarea pertenece al Usuario: {self.__perte__perteneceAUsuario} \n La Tarea {completada} esta completada " 
+      return f"\nEl nombre de tu tarea es: {self.__nombre} \n La fecha Limite es: {self.__fechaLimite} \n La fecha de creación es: {self.__fechaCreacion} \n La Tarea pertenece al Usuario: {self.__perteneceAUsuario} \n La Tarea {completada} esta completada " 
     
 
 

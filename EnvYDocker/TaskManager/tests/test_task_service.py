@@ -132,5 +132,5 @@ def test_modificar_tarea_Nombre_con_Service(monkeypatch):
     usuarioPrueba_8 = Usuario("Sergio Daniel", "sergiodaniel@gmail.com")
     usuarioTarea = Tarea( "Estudiar Ec. Dif.", datetime(2026, 8, 30, 15, 30), usuarioPrueba_8)
     monkeypatch.setattr("builtins.input", lambda _: "Programación")
-    administrador_tareas.modificarTarea(usuarioTarea, 1)
+    administrador_tareas.modificarTarea(usuarioTarea, "1")
     assert usuarioTarea.nombre == "Programación"
