@@ -1,8 +1,6 @@
 import re
 import random
 from datetime import datetime
-from src.models.Usuario import Usuario
-from src.services.Task_Service import Task_Service
 
 
 def verificar_iD(iD : int) -> bool:
@@ -24,26 +22,16 @@ def verificar_correo(correo : str) -> bool:
 
 def verificar_fecha(laFecha : datetime) -> bool:
   ahora = datetime.now().replace(second=0, microsecond=0)
-  if not isinstance(laFecha, datetime) or laFecha < ahora:
+  if not isinstance(laFecha, datetime) or laFecha < ahora :
     return False
   return True
 
-def verficar_existencia_usuario(nombreBuscar : str, taskService : Task_Service) -> bool:
-
-  for  Usuario in taskService.listaUsuarios: 
-    if Usuario.name == nombreBuscar:
-      return True
-  return False
 
 def verificar_estatus(estatus : bool) -> bool:
   if not isinstance(estatus, bool):
      return False
   return True
 
-def verificar_usuario(UsuarioAVerficiar : Usuario) -> bool: 
-  if not isinstance(UsuarioAVerficiar, Usuario):
-    return False
-  return True
 
 def genAleatorio() -> int:
   return random.randint(10000, 999999)

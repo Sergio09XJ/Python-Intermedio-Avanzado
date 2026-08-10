@@ -1,8 +1,9 @@
 
 from dataclasses import dataclass
 from datetime import datetime
-from src.utils.validatorsYutils import verificar_fecha, verificar_nombre, verificar_estatus, verificar_usuario
-from src.models.Usuario import Usuario
+from src.utils.validatorsYutils import verificar_fecha, verificar_nombre, verificar_estatus
+from src.models.Usuario import Usuario, verificar_usuario
+
 
 
 @dataclass
@@ -17,10 +18,10 @@ class Tarea:
   def __post_init__(self):
     if verificar_nombre(self.__nombre) == False: 
        raise TypeError("El nombre no es del tipo correcto. ")
-    if verificar_fecha(self.__fechaCreacion) == True: 
-           raise TypeError("El tipo de dato no coincide con el tipo de fecha o esta fuera de los limites.")
-    if verificar_fecha(self.__fechaLimite) == True: 
-               raise TypeError("El tipo de dato no coincide con el tipo de fecha o esta fuera de los limites.")
+    if verificar_fecha(self.__fechaCreacion) == False: 
+           raise TypeError("El tipo de dato no coincide con el tipo de fecha de creación o esta fuera de los limites.")
+    if verificar_fecha(self.__fechaLimite) == False: 
+               raise TypeError("El tipo de dato no coincide con el tipo de fecha limite o esta fuera de los limites.")
     if verificar_estatus(self.__estatus) == False: 
            raise TypeError("El tipo de dato no es correcto para el estatus de la Tarea. ")
     if verificar_usuario(self.__perteneceAUsuario) == False: 
@@ -57,7 +58,7 @@ class Tarea:
   @fechaCreacion.setter
   def fechaCreacion(self, nuevaFechaCreacion : datetime) -> None: 
        if verificar_fecha(nuevaFechaCreacion) == True:
-          self.fechaCreacion = nuevaFechaCreacion
+          self.__fechaCreacion = nuevaFechaCreacion
        else: 
           raise TypeError("El tipo de dato no coincide con el tipo de fecha o esta fuera de los limites."); 
 
@@ -68,7 +69,7 @@ class Tarea:
   @fechaLimite.setter
   def fechaLimite(self, nuevaFechaLimite : datetime) -> None: 
          if verificar_fecha(nuevaFechaLimite) == True:
-            self.fechaLimite = nuevaFechaLimite
+            self.__fechaLimite = nuevaFechaLimite
          else: 
             raise TypeError("El tipo de dato no coincide con el tipo de fecha o esta fuera de los limites."); 
 
@@ -83,9 +84,10 @@ class Tarea:
          else: 
               raise TypeError("El tipo de dato no es booleano"); 
 
-
-
-
+  def mostrarTarea(self) -> str:
+      completada = "si" if self.__estatus else "no"
+      return f"\nEl nombre de tu tarea es: {self.__nombre} \n La fecha Limite es: {self.__fechaLimite} \n La fecha de creación es: {self.__fechaCreacion} \n La Tarea pertenece al Usuario: {self.__perte__perteneceAUsuario} \n La Tarea {completada} esta completada " 
+    
 
 
 

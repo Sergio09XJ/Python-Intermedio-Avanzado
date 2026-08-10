@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from src.models.Usuario import Usuario
 from src.models.Tarea import Tarea
-from src.utils.validatorsYutils import  verficar_existencia_usuario, verificar_fecha, creador_fecha
+from src.utils.validatorsYutils import  creador_fecha
 
 import logging
 
@@ -26,8 +26,8 @@ class Task_Service:
 
   def crearTarea(self, UsuarioParam : Usuario) -> Tarea: 
 
-    print("\n --------------------- Creador de Tareas --------------------- ")
-    nombre = input("Por favor dame el nombre de tu tarea: ")
+
+    nombre = input("\nPor favor dame el nombre de tu tarea: ")
 
     fechaLimite = creador_fecha()
     try: 
@@ -42,7 +42,7 @@ class Task_Service:
 
 
   def crearUsuario(self) -> None:
-      nombre = input("Dame tu nombre por favor: ")
+      nombre = input("\nDame tu nombre por favor: ")
       correo = input("Ahora Dame tu correo por favor(formato = nombre@email.com): ")
       try: 
         self.__listaUsuarios.append(Usuario(nombre, correo))
@@ -68,7 +68,7 @@ class Task_Service:
            if Tarea.nombre == nombreTarea: 
               logger.info(f"La tarea {nombreTarea} se encontro correctamente. ")
               return Tarea
-     logger.warning("\La Tarea que buscas no Existe")
+     logger.warning("\nLa Tarea que buscas no Existe")
      raise 
 
   def eliminarUsuario(self, nombreUsuario : str) -> Usuario: 

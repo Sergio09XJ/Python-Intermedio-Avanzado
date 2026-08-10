@@ -12,55 +12,102 @@ logging.basicConfig(
 
 
 def main(): 
-
+      administradorTareas = Task_Service()
       print("\n ---------------- Administrador de Tareas ---------------- ")
 
       while True: 
-       print("\n ------------- Menu ------------- ")
-       print("\n 1.- Crear Usuario")
-       print("\n 2.- Buscar Usuario")
-       print("\n 3.- Eliminar Usuario")
-       print("\n 4.- Marcar Tarea como Completada")
-
-       print("\n 5.- Crear Tarea ")
-       print("\n 6.- Buscar Tarea ")
-       print("\n 7.- Eliminar Tarea")
-       print("\n 8.- Eliminar Tareas de un Usuario")
-       print("\n 9.- Obtener Tareas de el Usuario")
-       print("\n 10.- Modificar Tarea ")
-       print("\n 11.- Salir de Programa")
+       print("\n             ------------- Menu ------------- ")
+       print("\n1.- Crear Usuario | 2.- Buscar Usuario")
+       print("3.- Eliminar Usuario | 4.- Marcar Tarea como Completada")
+       print("5.- Crear Tarea | 6.- Buscar Tarea")
+       print("7.- Eliminar Tarea | 8.- Eliminar Tareas de un Usuario")
+       print("9.- Obtener Tareas de el Usuario | 10.- Modificar Tarea | 11.- Salir de Programa ")
 
        eleccion = input("Que deseas hacer: ")
 
        match eleccion: 
-           case 1: 
+           case "1": 
                print("Eleccion 1")
-           case 2:
+               administradorTareas.crearUsuario()
+           case "2":
                print("Eleccion 2")
-           case 3: 
+               administradorTareas.crearTarea()
+           case "3": 
                print("Eleccion 3")
-           case 4: 
+               administradorTareas.eliminarTarea()
+           case "4": 
                print("Eleccion 4")
-           case 5: 
+               try:
+                 TareaACompletar = input("Dame el nombre tarea que deseas buscar: ")
+                 administradorTareas.tareaCompletada(administradorTareas.buscarTarea(TareaACompletar))
+               except ValueError as e:
+                   print(f"{e}")        
+           case "5": 
                print("Eleccion 5")
-           case 6:
+               try: 
+                TareaACompletar = input("Dame el nombre tarea que deseas buscar: ")
+                administradorTareas.buscarTarea(TareaACompletar).mostrarTarea()
+               except ValueError as e:
+                 print(f"{e}")    
+           case "6":
                print("Eleccion 6")
-           case 7: 
+               try: 
+                TareaABuscar = input("\n Dame el nombre de la tarea que deseas buscar: ")
+                administradorTareas.buscarTarea(TareaABuscar).mostrarTarea()
+               except ValueError as e: 
+                print(f"{e}")
+           case "7": 
                print("Eleccion 7")
-           case 8:
+               try: 
+                 TareaAEliminar = input("\nDame el nombre de la Tarea que desesas buscar: ")
+                 administradorTareas.eliminarTarea(TareaAEliminar)
+               except ValueError as e: 
+                 print(f"{e}")
+           case "8":
                print("Eleccion 8")
-           case 9: 
+               try: 
+                UsuarioAEliminarTareas = input("\n Dame el nombre del usuario para eliminar sus tareas: ")
+                Tareas = administradorTareas.eliminarTareasUsuario(UsuarioAEliminarTareas)
+                print("\nLa lista de tareas eliminadas es: ")
+                for Tarea in Tareas: 
+                  print("\n")
+                  Tarea.mostrarTarea()
+               except ValueError as e: 
+                  print(f"{e}")
+                  
+           case "9": 
                print("Eleccion 9")
-           case 10: 
+               try: 
+                 UsuarioAEliminarTareas = input("\n Dame el nombre del usuario para eliminar sus tareas: ")
+                 Tareas = administradorTareas.obtenerTareasUsuario(UsuarioAEliminarTareas)
+                 print("\nLa lista de tareas eliminadas es: ")
+                 for Tarea in Tareas: 
+                     print("\n")
+                     Tarea.mostrarTarea()
+               except ValueError as e: 
+                  print(f"{e}")
+           case "10": 
                print("Eleccion 10")
-           case 11: 
+               try: 
+                UsuarioAEliminarTareas = input("\n Dame el nombre del usuario para eliminar sus tareas: ")
+                Tareas = administradorTareas.obtenerTareasUsuario(UsuarioAEliminarTareas)
+                print("\nLa lista de tareas eliminadas es: ")
+                 for Tarea in Tareas: 
+                  print("\n")
+                 Tarea.mostrarTarea()
+               except ValueError as e: 
+                print(f"{e}")
+           case "11": 
                print("Saliste del programa, que tengas buen día (: ")
-               print("Eleccion 11")
+         
+               break
+           case _:
+               print("\nElección invalidad, no puedes poner valores diferentes a los del menu. ")
            
        
 
 
-
+main()
 
 
       

@@ -14,7 +14,7 @@ class Usuario:
        raise TypeError("El nombre no es del tipo correcto. ")
     if verificar_iD(self.__iD) == False: 
        raise TypeError("El nuevo iD o es de longitud diferente o tipo incorrecto. ")
-    if verificar_correo(self._correo) == True: 
+    if verificar_correo(self.__correo) == False: 
            raise TypeError("El correo no tiene el formato correcto ")
     return True
  
@@ -52,6 +52,10 @@ class Usuario:
     else: 
        raise TypeError("El correo no tiene el formato correcto ")
 
+def verificar_usuario(UsuarioAVerficiar : Usuario) -> bool: 
+  if not isinstance(UsuarioAVerficiar, Usuario):
+    return False
+  return True
 
 
 
