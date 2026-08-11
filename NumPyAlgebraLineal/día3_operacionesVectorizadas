@@ -1,0 +1,17 @@
+import numpy as np
+arreglo = np.arange(1,11)
+print(arreglo)
+
+print(f"\nCuadrado del arreglo: {arreglo ** 2}") #Arreglo al cuadrado
+print(f"\nArreglo por dos: {arreglo * 2}")#Arreglo por 2 
+print(f"\nArreglo mas 10: {arreglo + 10}") #Arreglo mas 10
+print(f"\nArreglo entre 2: {arreglo / 2}") #Arreglo entre 2
+print(f"\nSuma de los valores del arreglo: {np.sum(arreglo)}") #Suma de valores del arreglo
+print(f"\nPromedio de los valores del arreglo: {np.mean(arreglo)}") #Promedio/Media del arreglo
+print(f"\nMinimo valor: {np.min(arreglo)} y Máximo valor: {np.max(arreglo)} ") #Max y min del arreglo 
+print(f"\nDesviación estandar: {np.std(arreglo)}") #Desviación de los valores del arreglo. 
+print(f"\nNormalización Datos: {(arreglo - np.mean(arreglo))/np.std(arreglo)}") #Normalización de datos del arreglo 
+
+precios = np.array([100, 200, 300, 400, 500])
+
+print(f"\nsAumento del precios en un 16%: {precios + (precios * 0.16)}")
