@@ -1,0 +1,32 @@
+id,fecha,producto,categoria,cantidad,precio,cliente
+500287,2026-08-01,Laptop,Electrónica,10,850.0,Ana Gómez
+500135,2026-08-02,Mouse,Accesorios,5,25.5,Carlos Ruiz
+501757,2026-08-03,Teclado,Accesorios,2,45.0,María López
+501546,2026-08-04,Monitor,Monitores,1,220.0,Juan Pérez
+499290,2026-08-05,Audífonos,Audio,3,60.0,Laura Torres
+500032,2026-08-06,Impresora,Oficina,5,550.0,Pedro Sánchez
+499342,2026-08-07,Silla Gamers,Muebles,2,180.0,Sofia Castro
+499267,2026-08-08,Escritorio,Muebles,1,210.0,Diego Morales
+500694,2026-08-09,Webcam,Accesorios,4,35.0,Lucia Fernández
+498242,2026-08-10,Disco Duro,Almacenamiento,2,80.0,Miguel Ángel
+498277,2026-08-11,Tablet,Electrónica,5,300.0,Elena Vargas
+499516,2026-08-12,Smartphone,Electrónica,1,650.0,Javier Mendoza
+499177,2026-08-13,Cargador,Accesorios,6,15.0,Carmen Ortíz
+500738,2026-08-14,Cable HDMI,Accesorios,8,10.0,Pablo Silva
+499123,2026-08-15,Funda Laptop,Accesorios,3,20.0,Natalia Reyes
+501529,2026-08-16,Altavoces,Audio,2,45.0,Andrés Ramos
+500478,2026-08-17,Micrófono,Audio,1,95.0,Valeria Cruz
+502378,2026-08-18,Router,Redes,2,55.0,Gabriel Medina
+499557,2026-08-19,Memoria USB,Almacenamiento,10,12.0,Daniela Vega
+500738,2026-08-20,Tarjeta SD,Almacenamiento,5,18.0,Fernando Flores
+500745,2026-08-21,Teclado Mecánico,Accesorios,2,75.0,Adriana Guerrero
+498576,2026-08-22,Mousepad,Accesorios,4,15.0,Ricardo Campos
+501335,2026-08-23,Soporte Laptop,Accesorios,3,25.0,Patricia Delgado
+500576,2026-08-24,Powerbank,Accesorios,5,30.0,Hugo Romero
+499779,2026-08-25,Hub USB,Accesorios,4,22.0,Isabel Peña
+498169,2026-08-26,Lámpara LED,Oficina,2,28.0,Esteban Benítez
+500384,2026-08-27,Monitor Curvo,Monitores,1,320.0,Claudia Paredes
+500265,2026-08-28,Teclado Inalámbrico,Accesorios,3,50.0,Gonzalo Navarro
+500509,2026-08-29,Audífonos Bluetooth,Audio,2,85.0,Mónica Serrano
+499580,2026-08-30,Proyector,Electrónica,1,400.0,Jorge Ibáñez
+
