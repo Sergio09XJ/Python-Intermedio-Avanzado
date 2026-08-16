@@ -1,0 +1,51 @@
+producto_id,producto,categoria,costo
+101,Laptop Pro,Tecnología,12000
+102,Mouse Óptico,Accesorios,15
+103,Teclado USB,Accesorios,25
+104,Monitor 24,Monitores,140
+105,Audífonos BT,Audio,35
+106,Impresora Laser,Oficina,90
+107,Silla Gamer,Muebles,110
+108,Escritorio Madera,Muebles,130
+109,Webcam HD,Accesorios,20
+110,Disco Duro 1TB,Almacenamiento,45
+111,Tablet 10,Tecnología,180
+112,Smartphone 5G,Tecnología,400
+113,Cargador Cápido,Accesorios,8
+114,Cable HDMI 2m,Accesorios,5
+115,Funda Laptop,Accesorios,10
+116,Altavoces PC,Audio,25
+117,Micrófono USB,Audio,55
+118,Router Wi-Fi 6,Redes,30
+119,Memoria USB 64GB,Almacenamiento,6
+120,Tarjeta SD 128GB,Almacenamiento,10
+121,Teclado Mecánico,Accesorios,40
+122,Mousepad XXL,Accesorios,8
+123,Soporte Laptop,Accesorios,12
+124,Powerbank 10k,Accesorios,18
+125,Hub USB-C,Accesorios,12
+126,Lámpara LED,Oficina,15
+127,Monitor Curvo 27,Monitores,200
+128,Teclado Inalámbrico,Accesorios,28
+129,Audífonos Noise Canc,Audio,50
+130,Proyector Mini,Tecnología,250
+131,SSD 500GB,Almacenamiento,35
+132,Base Enfriadora,Accesorios,15
+133,Camara Web 4K,Accesorios,60
+134,Lápiz Óptico,Accesorios,20
+135,Adaptador Ethernet,Redes,10
+136,Cable DisplayPort,Accesorios,6
+137,Batería UPS,Oficina,50
+138,Soporte Monitor,Muebles,25
+139,Micrófono Lavalier,Audio,18
+140,Bolsa Antirrobo,Accesorios,22
+141,Lector Tarjetas,Almacenamiento,8
+142,Switch Ethernet,Redes,20
+143,Consola Mini,Tecnología,60
+144,Gafas VR,Tecnología,150
+145,Control Blanco,Accesorios,35
+146,Filtro Privacidad,Accesorios,12
+147,Pastillas Limpieza,Oficina,5
+148,Organizador Cables,Accesorios,4
+149,Luz Anillo LED,Accesorios,15
+150,Capturadora Video,Tecnología,80
