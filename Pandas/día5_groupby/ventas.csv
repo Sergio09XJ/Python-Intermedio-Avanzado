@@ -1,0 +1,32 @@
+id,fecha,producto,categoria,cantidad,precio,cliente,ingresos
+500287,2026-08-01,Laptop,Electrónica,10,850.0,Ana Gómez,8500.0
+500135,2026-08-02,Mouse,Accesorios,5,25.5,Carlos Ruiz,127.5
+501757,2026-08-03,Teclado,Accesorios,2,45.0,María López,90.0
+501546,2026-08-04,Monitor,Monitores,1,220.0,Juan Pérez,220.0
+499290,2026-09-05,Audífonos,Audio,3,60.0,Laura Torres,180.0
+500032,2026-09-06,Impresora,Oficina,1,150.0,Pedro Sánchez,150.0
+499342,2026-09-07,Silla Gamers,Muebles,2,180.0,Sofia Castro,360.0
+499267,2026-09-08,Escritorio,Muebles,1,210.0,Diego Morales,210.0
+500694,2026-10-09,Webcam,Accesorios,4,35.0,Lucia Fernández,140.0
+498242,2026-10-10,Disco Duro,Almacenamiento,2,80.0,Miguel Ángel,160.0
+498277,2026-01-11,Tablet,Electrónica,1,300.0,Elena Vargas,300.0
+499516,2026-11-12,Smartphone,Electrónica,1,650.0,Javier Mendoza,650.0
+499177,2026-02-13,Cargador,Accesorios,6,15.0,Carmen Ortíz,90.0
+500738,2026-02-14,Cable HDMI,Accesorios,8,10.0,Pablo Silva,80.0
+499123,2026-02-15,Funda Laptop,Accesorios,3,20.0,Natalia Reyes,60.0
+501529,2026-02-16,Altavoces,Audio,2,45.0,Andrés Ramos,90.0
+500478,2026-04-17,Micrófono,Audio,1,95.0,Valeria Cruz,95.0
+502378,2026-04-18,Router,Redes,2,55.0,Gabriel Medina,110.0
+499557,2026-04-19,Memoria USB,Almacenamiento,10,12.0,Daniela Vega,120.0
+500738,2026-05-20,Tarjeta SD,Almacenamiento,5,18.0,Fernando Flores,90.0
+500745,2026-05-21,Teclado Mecánico,Accesorios,2,75.0,Adriana Guerrero,150.0
+498576,2026-05-22,Mousepad,Accesorios,4,15.0,Ricardo Campos,60.0
+501335,2026-12-23,Soporte Laptop,Accesorios,3,25.0,Patricia Delgado,75.0
+500576,2026-12-24,Powerbank,Accesorios,5,30.0,Hugo Romero,150.0
+499779,2026-12-25,Hub USB,Accesorios,4,22.0,Isabel Peña,88.0
+498169,2026-12-26,Lámpara LED,Oficina,2,28.0,Esteban Benítez,56.0
+500384,2026-06-27,Monitor Curvo,Monitores,1,320.0,Claudia Paredes,320.0
+500265,2026-06-28,Teclado Inalámbrico,Accesorios,3,50.0,Gonzalo Navarro,150.0
+500509,2026-03-29,Audífonos Bluetooth,Audio,2,85.0,Mónica Serrano,170.0
+499580,2026-03-30,Proyector,Electrónica,1,400.0,Jorge Ibáñez,400.0
+
