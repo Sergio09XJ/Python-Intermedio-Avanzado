@@ -1,0 +1,121 @@
+venta_id,fecha,cliente,ciudad,producto,categoria,cantidad,precio
+1001,2026-01-05,Ana Gómez,CDMX,Laptop,Tecnología,1.0,18000.0
+1002,2026-01-06,Carlos Ruiz,Guadalajara,Mouse,Accesorios,5.0,25.5
+1003,2026-01-07,María López,Monterrey,Teclado,Accesorios,2.0,45.0
+1004,08/01/2026,juan pérez,cdmx,Monitor,Monitores,1.0,220.0
+1005,2026-01-09,Laura Torres,Querétaro,Audífonos,Audio,3.0,60.0
+1006,2026-01-10,Pedro Sánchez,CDMX,Impresora,Oficina,1.0,150.0
+1007,,Sofia Castro,Guadalajara,Silla Gamer,Muebles,2.0,180.0
+1008,2026-01-12,Diego Morales,Monterrey,Escritorio,Muebles ,1.0,210.0
+1009,13/01/2026,Lucia Fernández,Toluca,Webcam,Accesorios,4.0,35.0
+1010,2026-01-14,Miguel Ángel,Puebla,Disco Duro,Almacenamiento,2.0,80.0
+1011,2026-01-15,Elena Vargas,cdmx,Tablet,Tecnología,1.0,300.0
+1012,2026-01-16,Javier Mendoza,Querétaro,Smartphone,Técnología,,650.0
+1013,2026-01-17,,Guadalajara,Cargador,Accesorios,6.0,15.0
+1014,2026-01-18,Pablo Silva,Monterrey,Cable HDMI,Accesorios,8.0,10.0
+1015,19/01/2026,Natalia Reyes,CDMX,Funda Laptop,Accesorios,3.0,20.0
+1016,2026-01-20,Andrés Ramos,Puebla,Altavoces,Audio,2.0,45.0
+1017,2026-01-21,Valeria Cruz,Toluca,Micrófono,Audio,1.0,95.0
+1018,,Gabriel Medina,,Router,Redes,2.0,55.0
+1019,2026-01-23,Daniela Vega,Guadalajara,Memoria USB,,10.0,12.0
+1020,2026-01-24,Fernando Flores,Querétaro,Tarjeta SD,Almacenamiento,5.0,18.0
+1021,2026-01-25,Adriana Guerrero,Monterrey,Teclado Mecánico,Accesorios,2.0,75.0
+1022,2026-01-26,ricardo campos,cdmx,Mousepad,Accesorios,4.0,15.0
+1023,27/01/2026,Patricia Delgado,Puebla,Soporte Laptop,Accesorios,3.0,25.0
+1024,2026-01-28,Hugo Romero,Guadalajara,Powerbank,Accesorios,5.0,30.0
+1025,2026-01-29,Isabel Peña,Toluca,Hub USB,Accesorios,4.0,22.0
+1026,2026-01-30,Esteban Benítez,CDMX,Lámpara LED,Oficina,2.0,28.0
+1027,2026-01-31,Claudia Paredes,Querétaro,Monitor Curvo,Monitores,1.0,320.0
+1028,2026-02-01,Gonzalo Navarro,Monterrey,Teclado Inalámbrico,Accesorios,3.0,50.0
+1029,02/02/2026,,CDMX,Audífonos BT,Audio,2.0,85.0
+1030,2026-02-03,Jorge Ibáñez,Guadalajara,Proyector,Tecnología,1.0,400.0
+1031,2026-02-04,Alicia Bravo,Puebla,Laptop,tecnología,2.0,-999.0
+1032,,Roberto Gil,Toluca,Mouse,Accesorios,3.0,25.5
+1033,2026-02-06,Lorena Marín,CDMX,Teclado,Accesorios,1.0,45.0
+1034,2026-02-07,Santi Rivas,Querétaro,Monitor,Monitores,2.0,220.0
+1035,08/02/2026,Camila Molina,Guadalajara,Audífonos,Audio,4.0,60.0
+1036,2026-02-09,Raúl Orozco,Monterrey,Impresora,Oficina,5.0,150.0
+1037,2026-02-10,Silvia Campos,cdmx,Silla Gamer,Muebles,1.0,180.0
+1038,2026-02-11,Tomas Prieto,Puebla,Escritorio,Muebles,2.0,210.0
+1039,2026-02-12,Rosa Merino,Toluca,Webcam,Accesorios,3.0,35.0
+1040,13/02/2026,Héctor Beltrán,CDMX,Disco Duro,,2.0,80.0
+1041,2026-02-14,Beatriz Solís,Guadalajara,Tablet,Tecnología,5.0,300.0
+1042,2026-02-15,Felipe Parra,Querétaro,Smartphone,Tecnología,2.0,650.0
+1043,,Verónica Cano,Monterrey,Cargador,Accesorios,1.0,15.0
+1044,2026-02-17,Óscar Naranjo,CDMX,Cable HDMI,Accesorios,1.0,10.0
+1045,2026-02-18,,Puebla,Funda Laptop,Accesorios,2.0,20.0
+1046,19/02/2026,Rubén Pastor,Toluca,Altavoces,Audio,3.0,45.0
+1047,2026-02-20,Miriam Vidal,,Micrófono,Audio,10.0,
+1048,2026-02-21,César Esteban,Guadalajara,Router,Redes,,55.0
+1049,2026-02-22,Nuria Moya,Querétaro,Memoria USB,Almacenamiento,2.0,12.0
+1050,23/02/2026,Víctor Luque,Monterrey,Tarjeta SD,Almacenamiento,1.0,18.0
+1051,2026-02-24,Ana Gómez,CDMX,Teclado Mecánico,Accesorios,1.0,75.0
+1052,2026-02-25,Carlos Ruiz,Guadalajara,Mousepad,Accesorios,5.0,15.0
+1053,2026-02-26,María López,Monterrey,Soporte Laptop,Accesorios,2.0,25.0
+1054,27/02/2026,Juan Pérez,Puebla,Powerbank,Accesorios,1.0,30.0
+1055,2026-02-28,Laura Torres,Querétaro,Hub USB,Accesorios,3.0,22.0
+1056,2026-03-01,Pedro Sánchez,cdmx,Lámpara LED,Oficina,1.0,28.0
+1057,,Sofia Castro,Guadalajara,Monitor Curvo,Monitores,2.0,320.0
+1058,2026-03-03,Diego Morales,Monterrey,Teclado Inalámbrico,,1.0,50.0
+1059,04/03/2026,,Toluca,Audífonos BT,Audio,4.0,85.0
+1060,2026-03-05,Miguel Ángel,Puebla,Proyector,Tecnología,2.0,400.0
+1061,2026-03-06,Elena Vargas,CDMX,Laptop,Tecnología,1.0,18000.0
+1062,2026-03-07,Javier Mendoza,Querétaro,Mouse,Accesorios,1.0,25.5
+1063,2026-03-08,Carmen Ortíz,,Teclado,Accesorios,6.0,45.0
+1064,09/03/2026,Pablo Silva,Monterrey,Monitor,Monitores,8.0,220.0
+1065,2026-03-10,Natalia Reyes,CDMX,Audífonos,Audio,3.0,60.0
+1066,2026-03-11,Andrés Ramos,Puebla,Impresora,Oficina,2.0,150.0
+1067,2026-03-12,Valeria Cruz,Toluca,Silla Gamer,Muebles,,180.0
+1068,,Gabriel Medina,CDMX,Escritorio,Muebles,2.0,210.0
+1069,2026-03-14,Daniela Vega,Guadalajara,Webcam,Accesorios,10.0,35.0
+1070,15/03/2026,Fernando Flores,Querétaro,Disco Duro,Almacenamiento,5.0,80.0
+1071,2026-03-16,Adriana Guerrero,Monterrey,Tablet,Tecnología,2.0,300.0
+1072,2026-03-17,Ricardo Campos,cdmx,Smartphone,Tecnología,4.0,650.0
+1073,2026-03-18,,Puebla,Cargador,Accesorios,3.0,15.0
+1074,2026-03-19,Hugo Romero,Guadalajara,Cable HDMI,,5.0,
+1075,20/03/2026,Isabel Peña,Toluca,Funda Laptop,Accesorios,4.0,20.0
+1076,2026-03-21,Esteban Benítez,CDMX,Altavoces,Audio,2.0,45.0
+1077,2026-03-22,Claudia Paredes,Querétaro,Micrófono,Audio,1.0,95.0
+1078,,Gonzalo Navarro,Monterrey,Router,Redes,3.0,55.0
+1079,2026-03-24,Mónica Serrano,,Memoria USB,Almacenamiento,2.0,12.0
+1080,2026-03-25,Jorge Ibáñez,Guadalajara,Tarjeta SD,Almacenamiento,1.0,18.0
+1081,26/03/2026,Alicia Bravo,Puebla,Teclado Mecánico,Accesorios,2.0,75.0
+1082,2026-03-27,Roberto Gil,Toluca,Mousepad,Accesorios,3.0,15.0
+1083,2026-03-28,Lorena Marín,CDMX,Soporte Laptop,Accesorios,1.0,25.0
+1084,2026-03-29,Santi Rivas,Querétaro,Powerbank,Accesorios,2.0,30.0
+1085,30/03/2026,Camila Molina,Guadalajara,Hub USB,Accesorios,4.0,22.0
+1086,2026-03-31,Raúl Orozco,Monterrey,Lámpara LED,Oficina,5.0,28.0
+1087,2026-04-01,,cdmx,Monitor Curvo,Monitores,1.0,320.0
+1088,,Tomas Prieto,Puebla,Teclado Inalámbrico,Accesorios,2.0,50.0
+1089,2026-04-03,Rosa Merino,Toluca,Audífonos BT,Audio,,85.0
+1090,04/04/2026,Héctor Beltrán,CDMX,Proyector,Tecnología,2.0,-999.0
+1091,2026-04-05,Beatriz Solís,Guadalajara,Laptop,Tecnología,5.0,300.0
+1092,2026-04-06,Felipe Parra,Querétaro,Mouse,Accesorios,2.0,650.0
+1093,2026-04-07,Verónica Cano,,Teclado,Accesorios,1.0,15.0
+1094,2026-04-08,Óscar Naranjo,CDMX,Monitor,,1.0,10.0
+1095,09/04/2026,Irene Cordero,Puebla,Audífonos,Audio,2.0,20.0
+1096,2026-04-10,Rubén Pastor,Toluca,Impresora,Oficina,3.0,45.0
+1097,2026-04-11,Miriam Vidal,CDMX,Silla Gamer,Muebles,10.0,95.0
+1098,,César Esteban,Guadalajara,Escritorio,Muebles,8.0,55.0
+1099,2026-04-13,Nuria Moya,Querétaro,Webcam,Accesorios,2.0,12.0
+1100,14/04/2026,Víctor Luque,Monterrey,Disco Duro,Almacenamiento,1.0,18.0
+1005,2026-01-09,Laura Torres,Querétaro,Audífonos,Audio,3.0,60.0
+1012,2026-01-16,Javier Mendoza,Querétaro,Cargador,Accesorios,0.0,15.0
+1025,2026-01-29,Isabel Peña,Toluca,Hub USB,Accesorios,4.0,22.0
+1101,2026-04-15,Ana Gómez,CDMX,Laptop,Tecnología,1.0,18000.0
+1102,2026-04-16,Carlos Ruiz,Guadalajara,Mouse,Accesorios,5.0,25.5
+1103,17/04/2026,María López,Monterrey,Teclado,Accesorios,2.0,45.0
+1104,2026-04-18,,Puebla,Monitor,Monitores,1.0,220.0
+1105,2026-04-19,Laura Torres,Querétaro,Audífonos,Audio,3.0,
+1106,,Pedro Sánchez,,Impresora,Oficina,1.0,150.0
+1107,2026-04-21,Sofia Castro,Guadalajara,Silla Gamer,,2.0,180.0
+1108,22/04/2026,Diego Morales,Monterrey,Escritorio,Muebles,1.0,210.0
+1109,2026-04-23,Lucia Fernández,Toluca,Webcam,Accesorios,4.0,35.0
+1110,2026-04-24,Miguel Ángel,Puebla,Disco Duro,Almacenamiento,,80.0
+1111,2026-04-25,Elena Vargas,cdmx,Tablet,Tecnología,1.0,300.0
+1112,26/04/2026,Javier Mendoza,Querétaro,Smartphone,Tecnología,1.0,650.0
+1113,2026-04-27,Carmen Ortíz,Guadalajara,Cargador,Accesorios,6.0,15.0
+1114,2026-04-28,Pablo Silva,Monterrey,Cable HDMI,Accesorios,8.0,10.0
+1115,,,CDMX,Funda Laptop,Accesorios,3.0,20.0
+1116,2026-04-30,Valeria Cruz,Puebla,Altavoces,Audio,2.0,45.0
+1117,01/05/2026,Gabriel Medina,Toluca,Micrófono,Audio,1.0,95.0
